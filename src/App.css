@@ -1,0 +1,48 @@
+.file-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  transition: border-color 0.3s;
+}
+.file-uploader.dragging {
+  border-color: #69c;
+}
+.file-uploader .file-list {
+  margin-bottom: 16px;
+}
+.file-uploader .file-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.file-uploader .file-name {
+  margin-right: 8px;
+}
+.file-uploader .file-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.file-uploader .file-input .file-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.file-uploader .file-input .file-label .file-icon {
+  font-size: 48px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+.file-uploader .file-input .file-label .file-text {
+  color: #666;
+  font-weight: bold;
+}
+.file-uploader .file-input input[type='file'] {
+  display: none;
+}
